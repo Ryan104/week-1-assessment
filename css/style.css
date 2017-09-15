@@ -1,0 +1,23 @@
+/* ------ Phone ( < 425px) ------ */
+
+
+
+
+
+
+
+/* ------ Tablet ( 425 < vw < 768 ) ----- */
+@media (min-width: 426px) and (max-width: 768px) {
+
+
+
+
+
+}
+
+
+/* ----- Desktop (> 768) ---- */
+@media (min-width: 767px){
+	
+}
+
