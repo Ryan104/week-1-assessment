@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #999;
+	color: #262626;
 
 }
 
@@ -58,6 +58,10 @@ a:visited {
 
 /* main card */
 
+.main-card {
+	color: #999;
+}
+
 .logo-image {
 	width: 65%;
 	margin: 0 auto;
@@ -66,7 +70,6 @@ a:visited {
 h2 {
 	font-size: 18px;
 	line-height: 22px;
-	font-weight: bold;
 }
 
 input {
@@ -81,12 +84,43 @@ input:focus {
 }
 
 .terms-text a {
-	text-decoration: none;
 	font-weight: 700;
 }
 
-a:visited {
+/* Login Card */
+
+.login-text a{
+	color: #3897f0;
+}
+
+/* Store Links */
+.store-badge {
+	width: 150px;
+}
+
+/* Footer */
+footer {
+	background-color: #fafafa;
+}
+
+.footer-links {  /* Couldnt think of how to do this without flexbox... */
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: #003569;
+	font-size: 12px;
+}
+
+footer a {
+	margin: 7px 15px;
+	display: inline-block;
+}
+
+.copyright-text {
 	color: #999;
+	text-align: center;
+	font-size: 12px;
+	margin: 8px 0;
 }
 
 /* ------ Tablet ( 425 < vw < 768 ) ----- */
