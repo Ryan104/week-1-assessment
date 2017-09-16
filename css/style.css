@@ -123,9 +123,25 @@ footer a {
 	margin: 8px 0;
 }
 
-/* ------ Tablet ( 425 < vw < 768 ) ----- */
-@media (min-width: 426px) and (max-width: 768px) {
+/* ------ Tablet ( 425 < vw) ----- */
+@media (min-width: 426px) {
+	body {
+		background-color: #fafafa;
+		margin-top: 40px;
+	}
 
+	.card {
+		max-width: 350px;
+		margin: 10px auto;
+		background-color: #fff;
+		border: 1px solid #e6e6e6;
+
+	}
+
+	.card-flat {
+		border: none;
+		background-color: inherit;
+	}
 
 
 
