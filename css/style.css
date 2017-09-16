@@ -12,6 +12,10 @@ body * {
     -webkit-box-sizing: border-box;
 }
 
+aside { /* Phone images */
+	display: none;
+}
+
 .section {
 	margin: 0;
 	width: 100%;
@@ -95,7 +99,7 @@ input:focus {
 
 /* Store Links */
 .store-badge {
-	width: 150px;
+	width: 133px;
 }
 
 /* Footer */
@@ -127,7 +131,6 @@ footer a {
 @media (min-width: 426px) {
 	body {
 		background-color: #fafafa;
-		margin-top: 40px;
 	}
 
 	.card {
@@ -142,15 +145,34 @@ footer a {
 		border: none;
 		background-color: inherit;
 	}
-
-
-
-
 }
 
 
 /* ----- Desktop (> 768) ---- */
 @media (min-width: 767px){
+	.wrapper {
+		width: 700px;
+		margin: 30px auto 0 auto;
+	}
+	aside {
+		display: inline-block;
+		float: left;
+		margin-left: auto;
+	}
 
+	aside img {
+		margin-top: 50px;
+		margin-right: 20px;
+		width: 330px;
+	}
+
+	main {
+		float: right;
+		margin-right: auto;
+	}
+
+	footer {
+		clear: both;
+	}
 }
 
