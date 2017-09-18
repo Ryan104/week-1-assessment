@@ -2,17 +2,17 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #262626;
+	color: #262626; /* dark grey */
 
 }
 
 body * {
-	box-sizing: border-box;
+	box-sizing: border-box; /* Fixed text input sizing issue */
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
-aside { /* Phone images */
+aside { /* Phone images (hide on small screens) */
 	display: none;
 }
 
@@ -21,17 +21,17 @@ aside { /* Phone images */
 	width: 100%;
 }
 
-.card {
+.card { /* Separate cards visible on larger screens */
 	padding: 20px 40px;
 	text-align: center;
 }
 
-.card-section {
+.card-section { /* space out content in cards */
 	padding: 5px 0;
 }
 
-.btn {
-	background-color: #3897f0;
+.btn { /* buttons */
+	background-color: #3897f0; /* blue */
 	color: #fff;
 	font-size: 14px;
 	border: none;
@@ -40,10 +40,10 @@ aside { /* Phone images */
 }
 
 .btn:active {
-	background-color: #117bdf;
+	background-color: #117bdf; /* Button darker blue when pressed */
 }
 
-.btn, input {
+.btn, input { 
 	font-size: 14px;
 	line-height: 18px;
 	width: 100%;
@@ -51,7 +51,7 @@ aside { /* Phone images */
 	margin: 3px 0;
 }
 
-.btn:focus, input:focus {
+.btn:focus, input:focus { /* get rid of highlight on selected form items */
 	outline-width: 0;
 }
 
@@ -66,13 +66,12 @@ a {
 }
 
 a:visited {
-	color: inherit;
+	color: inherit; /* dont change link color after they have been clicked */
 }
 
 /* main card */
-
 .main-card {
-	color: #999;
+	color: #999; /* lightish grey */
 }
 
 .logo-image {
@@ -91,23 +90,22 @@ input {
 	border: 1px solid #ccc;
 }
 
-input:focus {
+input:focus { /* Darker border when input field is selected */
 	border-color: #777;
 }
 
-.terms-text a {
+.terms-text a { /* Bold the links */
 	font-weight: 700;
 }
 
 /* Login Card */
-
 .login-text a{
-	color: #3897f0;
+	color: #3897f0; /* blue */
 }
 
 /* Store Links */
 .store-badge {
-	width: 133px;
+	width: 133px; /* size links to app stores, will be on single line on larger phones */
 }
 
 /* Footer */
@@ -115,24 +113,23 @@ footer {
 	background-color: #fafafa;
 }
 
-.footer-links {  /* Couldnt think of how to do this without flexbox... */
+.footer-links {  /* Couldnt think of how to do this centering without flexbox... */
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	color: #003569;
-	font-size: 12px;
+	font-size: 11px;
 }
 
-footer a {
-	margin: 7px 15px;
+footer a { /* space out the links */
+	margin: 7px 12px;
 	display: inline-block;
 }
 
 .copyright-text {
 	color: #999;
 	text-align: center;
-	font-size: 12px;
-	margin: 12px 0 20px 0;
+	font-size: 10px;
 }
 
 /* ------ Tablet ( 425 < vw) ----- */
@@ -141,7 +138,7 @@ footer a {
 		background-color: #fafafa;
 	}
 
-	.card {
+	.card { /* This card looks like a card */
 		max-width: 350px;
 		margin: 10px auto;
 		background-color: #fff;
@@ -149,7 +146,7 @@ footer a {
 
 	}
 
-	.card-flat {
+	.card-flat { /* This card acts like a card but shouldnt look like a card */
 		border: none;
 		background-color: inherit;
 	}
@@ -162,7 +159,7 @@ footer a {
 		width: 700px;
 		margin: 30px auto 0 auto;
 	}
-	aside {
+	aside { /* Show the phones image on large screens */
 		display: inline-block;
 		float: left;
 		margin-left: auto;
@@ -174,7 +171,7 @@ footer a {
 		width: 330px;
 	}
 
-	main {
+	main { /* Float the content next to the image */
 		float: right;
 		margin-right: auto;
 	}
@@ -185,7 +182,7 @@ footer a {
 		margin: 30px auto;
 	}
 
-	.footer-links {
+	.footer-links { /* links and copyright text on same line on big screens */
 		float: left;
 	}
 
