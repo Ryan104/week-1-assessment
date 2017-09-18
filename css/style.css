@@ -94,6 +94,20 @@ input:focus { /* Darker border when input field is selected */
 	border-color: #777;
 }
 
+
+
+.or-block * {
+	display: inline-block;
+}
+
+.accent-line {
+	width: 90px;
+}
+
+hr {
+	width: 100%;
+}
+
 .terms-text a { /* Bold the links */
 	font-weight: 700;
 }
