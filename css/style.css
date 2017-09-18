@@ -132,7 +132,7 @@ footer a {
 	color: #999;
 	text-align: center;
 	font-size: 12px;
-	margin: 8px 0;
+	margin: 12px 0 20px 0;
 }
 
 /* ------ Tablet ( 425 < vw) ----- */
@@ -181,6 +181,16 @@ footer a {
 
 	footer {
 		clear: both;
+		max-width: 930px;
+		margin: 30px auto;
+	}
+
+	.footer-links {
+		float: left;
+	}
+
+	.copyright {
+		float: right;
 	}
 }
 
